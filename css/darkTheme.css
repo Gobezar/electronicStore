@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #252525;
+    transition: 0.5s;
+    margin: 200px 0px 0px 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    transition: 0.5s;
+    margin: 60px;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Unbounded', cursive;
+}
+
+
+p {
+    color: white;
+    transition: 0.5s;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+.phones__section, .notebooks__section, .tablets__section , .gaming_pc__section, .accessories__section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px; 
+    justify-items: center;
+}
+
+.phones__card, .notebooks__card, .tablets__card, .gaming_pc__card, .accessories__card {
+    padding: 30px 20px;
+    width: 90%;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+.phones__card span,  .notebooks__card span, .tablets__card span, .gaming_pc__card span, .accessories__card span {
+    font-weight: bold;
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px 10px 60px;
+    transition: 0.5s;
+}
+
+.navbar__items ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar__items li {
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.navbar__items li a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar__items li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.switchThemeWrapper {
+    margin-right: 5%;
+}
+
+#switchMode {
+    transition: 0.5s;
+    padding: 10px;
+    border: 1px solid transparent;
+    font-size: 25px;
+    background-color: transparent;
+}
+
+#switchMode:hover {
+   cursor: pointer;
+}
+
+.buy-button {
+    padding: 10px 100px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: rgba(67, 25, 255, 0.74);
+    color: #fff;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.buy-button:hover {
+    cursor: pointer;
+   box-shadow: 0px 0px 29px 10px rgba(77, 63, 235, 0.582);
+
+}
+
+
+footer {
+    margin-top: 45px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #7c7c7c;
+}
+.footer__categoryLlist {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer__categoryLlist li {
+    margin-right: 40px;
+    margin-bottom: 40px;
+    
+}
+.footer__categoryLlist li a, footer p, footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    border-bottom: 1px solid transparent;
+    text-align: center;
+    font-family: 'Wix Madefor Display', sans-serif;
+    transition: 0.5s;
+}
+
+footer a {
+    text-decoration: underline;
+
+}
+
+.footer__categoryLlist li a:hover {
+    border-bottom: 1px solid #000;
+
+}
+
+#backToTopBtn {
+    font-size: 30px;
+    padding: 7px 20px 10px 20px;
+    background-color: rgba(67, 25, 255, 0.74);
+    color: #fff;
+    border: none;
+}
+#backToTopBtn:hover {
+    cursor: pointer;
+}

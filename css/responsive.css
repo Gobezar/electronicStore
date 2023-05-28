@@ -1,0 +1,750 @@
+@media (max-width: 1300px) {
+    body {
+        margin: 165px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 1100px) {
+    body {
+        margin: 125px 0px 0px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 100px 0px 0px 0px;
+    }
+}
+
+/************************* Переменные, кнопки, заголовки *************************************/
+
+@media (max-width: 1700px) {
+    h2 {
+        font-size: 38px;
+    }
+
+    .buy-button,
+    .modal__form button[type="submit"],
+    .modal__form button[type="button"] {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1550px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    .buy-button,
+    .modal__form button[type="submit"],
+    .modal__form button[type="button"] {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1450px) {
+    h2 {
+        font-size: 34px;
+        margin: 50px;
+    }
+
+    .buy-button,
+    .modal__form button[type="submit"],
+    .modal__form button[type="button"] {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1300px) {
+    #backToTopBtn {
+        font-size: 25px;
+        padding: 7px 15px 10px 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 32px;
+        margin: 30px;
+    }
+
+    .buy-button,
+    .modal__form button[type="submit"],
+    .modal__form button[type="button"] {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1100px) {
+    h2 {
+        font-size: 30px;
+        margin: 28px;
+    }
+
+    .buy-button,
+    .modal__form button[type="submit"],
+    .modal__form button[type="button"] {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 950px) {
+    h2 {
+        font-size: 28px;
+        margin: 25px;
+    }
+
+    .buy-button,
+    .modal__form button[type="submit"],
+    .modal__form button[type="button"] {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .buy-button,
+    .modal__form button[type="submit"],
+    .modal__form button[type="button"] {
+        width: 100px;
+        margin: 5px 0px 5px 0px;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 28px;
+        margin: 20px;
+    }
+}
+
+
+/***************************************** Навбар*********************************************/
+
+@media (max-width: 1700px) {
+    .navbar__items li {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .navbar__items li {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .navbar__items li {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #switchMode {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1250px) {
+    nav {
+        padding: 10px 0px 10px 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar__items li {
+        font-size: 15px;
+    }
+
+    #switchMode {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1150px) {
+    nav {
+        padding: 10px 10px 10px 10px;
+        justify-content: space-evenly
+    }
+
+    .navbar__logo__img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar__items li {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+
+    .navbar__items {
+        margin-left: 20px;
+    }
+
+    .navbar__items ul {
+        padding: 0;
+    }
+
+    .navbar__logo {
+        width: 30%;
+        text-align: center;
+    }
+
+    .navbar__logo__img {
+        width: 70%;
+    }
+
+    #switchMode {
+        font-size: 19px;
+    }
+
+    .switchThemeWrapper {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 950px) {
+    .navbar__items li {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #switchMode {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    #switchMode {
+        font-size: 16px;
+    }
+
+    .burgerMenuWrapper {
+        display: block;
+        order: 1;
+    }
+
+    .navbar__logo {
+        order: 2;
+        width: 60%;
+    }
+
+    .switchThemeWrapper {
+        order: 3;
+    }
+
+    .navbar__items {
+        display: none;
+    }
+}
+
+/***************************************** Основной блок *************************************/
+
+@media (max-width: 1800px) {
+
+    .phones__card,
+    .notebooks__card,
+    .tablets__card,
+    .gaming_pc__card,
+    .accessories__card {
+        padding: 30px 0px;
+    }
+}
+
+@media (max-width: 1700px) {
+
+    .phones__card,
+    .notebooks__card,
+    .tablets__card,
+    .gaming_pc__card,
+    .accessories__card {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .phones__section,
+    .notebooks__section,
+    .tablets__section,
+    .gaming_pc__section,
+    .accessories__section {
+        grid-gap: 0px;
+    }
+
+    .phones__card img,
+    .notebooks__card img,
+    .tablets__card img,
+    .gaming_pc__card img,
+    .accessories__card img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1550px) {
+
+    .phones__section,
+    .notebooks__section,
+    .tablets__section,
+    .gaming_pc__section,
+    .accessories__section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .phones__card,
+    .notebooks__card,
+    .tablets__card,
+    .gaming_pc__card,
+    .accessories__card {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1450px) {
+
+    .phones__card,
+    .notebooks__card,
+    .tablets__card,
+    .gaming_pc__card,
+    .accessories__card {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .phones__card img,
+    .notebooks__card img,
+    .tablets__card img,
+    .gaming_pc__card img,
+    .accessories__card img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .phones__card,
+    .notebooks__card,
+    .tablets__card,
+    .gaming_pc__card,
+    .accessories__card {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .phones__card img,
+    .notebooks__card img,
+    .tablets__card img,
+    .gaming_pc__card img,
+    .accessories__card img {
+        width: 70%;
+    }
+
+    .phones__card,
+    .notebooks__card,
+    .tablets__card,
+    .gaming_pc__card,
+    .accessories__card {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .phones__card,
+    .notebooks__card,
+    .tablets__card,
+    .gaming_pc__card,
+    .accessories__card {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .phones__section,
+    .notebooks__section,
+    .tablets__section,
+    .gaming_pc__section,
+    .accessories__section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .phones__card img,
+    .notebooks__card img,
+    .tablets__card img,
+    .gaming_pc__card img,
+    .accessories__card img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .phones__section,
+    .notebooks__section,
+    .tablets__section,
+    .gaming_pc__section,
+    .accessories__section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .phones__card img,
+    .notebooks__card img,
+    .tablets__card img,
+    .gaming_pc__card img,
+    .accessories__card img {
+        width: auto;
+        height: 50%;
+    }
+
+    .phones__card,
+    .notebooks__card,
+    .tablets__card,
+    .gaming_pc__card,
+    .accessories__card {
+        padding: 0px;
+        height: 450px;
+    }
+}
+
+
+
+
+/***************************************** Модальные окна ************************************/
+
+
+@media (max-width: 1700px) {
+
+    .modal__form label,
+    .modal__form textarea,
+    .modal__form button {
+        font-size: 16px;
+    }
+
+    .modal__form input {
+        font-size: 15px;
+    }
+
+    .commentWrapper textarea {
+        font-size: 15px;
+    }
+
+    .buyModalWindow {
+        font-size: 16px;
+    }
+
+    .buyModalWindow p {
+        margin-top: -50px;
+    }
+
+    .loader {
+        margin-top: 2%;
+    }
+
+}
+
+@media (max-width: 1550px) {
+
+    .modal__form label,
+    .modal__form textarea,
+    .modal__form button {
+        font-size: 15px;
+    }
+
+    .modal__form input {
+        font-size: 14px;
+    }
+
+    .commentWrapper textarea {
+        font-size: 14px;
+    }
+
+    .buyModalWindow {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1450px) {
+
+    .modal__form label,
+    .modal__form textarea,
+    .modal__form button {
+        font-size: 14px;
+    }
+
+    .modal__form input {
+        font-size: 13px;
+    }
+
+    .commentWrapper textarea {
+        font-size: 13px;
+    }
+
+    .buyModalWindow {
+        font-size: 14px;
+        height: 15%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .buyModalWindow p {
+        text-align: center;
+    }
+
+    .loader {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .modal__form label,
+    .modal__form textarea,
+    .modal__form button {
+        font-size: 13px;
+    }
+
+    .modal__form input {
+        font-size: 12px;
+    }
+
+    .commentWrapper textarea {
+        font-size: 12px;
+    }
+
+    .buyModalWindow {
+        font-size: 13px;
+        height: 10%;
+    }
+
+    .loader {
+        margin-top: 4%;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .modal__form label,
+    .modal__form textarea,
+    .modal__form button {
+        font-size: 12px;
+    }
+
+    .modal__form input {
+        font-size: 11px;
+    }
+
+    .commentWrapper textarea {
+        font-size: 11px;
+    }
+
+    .buyModalWindow {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .modal__form label,
+    .modal__form textarea,
+    .modal__form button {
+        font-size: 12px;
+    }
+
+    .modal__form input {
+        font-size: 11px;
+    }
+
+    .commentWrapper textarea {
+        font-size: 10px;
+    }
+
+    .buyModalWindow {
+        height: 8%;
+    }
+}
+
+@media (max-width: 700px) {
+    .modal__form {
+        padding: 20px;
+        width: 250px;
+    }
+
+    .modal__form label,
+    .modal__form textarea,
+    .modal__form button {
+        font-size: 11px;
+    }
+
+    .modal__form input {
+        font-size: 10px;
+    }
+
+    .commentWrapper textarea {
+        font-size: 9px;
+        width: 250px;
+    }
+
+    .buyModalWindow {
+        font-size: 10px;
+        height: 7%;
+    }
+
+    .loader {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .loader {
+        margin-top: 10%;
+        width: 15px;
+        height: 15px;
+    }
+
+    .buyModalWindow {
+        height: 6%;
+    }
+
+    .buyModalWindow p {
+        margin-top: -25px;
+    }
+}
+
+
+
+/***************************************** Футер *********************************************/
+@media (max-width: 1700px) {
+
+    footer p,
+    .footer__categoryLlist li a,
+    footer a {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1550px) {
+
+    footer p,
+    .footer__categoryLlist li a,
+    footer a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1450px) {
+
+    footer p,
+    .footer__categoryLlist li a,
+    footer a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1250px) {
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+}
+
+@media (max-width: 1200px) {
+
+    footer p,
+    .footer__categoryLlist li a,
+    footer a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    footer p,
+    .footer__categoryLlist li a,
+    footer a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    footer p,
+    .footer__categoryLlist li a,
+    footer a {
+        font-size: 13px;
+    }
+
+    .footer__categoryLlist li {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__categoryLlist {
+        padding-left: 20px;
+    }
+
+    .footer__categoryLlist li:last-child {
+        margin-right: 20px;
+        ;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer__categoryLlist {
+        text-align: center;
+    }
+
+    .footer__categoryLlist li:last-child {
+        margin-right: 0px;
+        ;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer__categoryLlist {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding-top: 10px;
+    }
+
+    .footer__signature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer__categoryLlist {
+        padding: 0;
+    }
+
+    .footer__categoryLlist li {
+        margin-right: 0px;
+    }
+
+    .footer__categoryLlist li:last-child {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}

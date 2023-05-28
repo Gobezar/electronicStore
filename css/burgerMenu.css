@@ -1,0 +1,107 @@
+.burger__items {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(221, 221, 221);
+    overflow: hidden;
+    transition: height 0.5s ease;
+    z-index: 1000;
+}
+.burger__items.open {
+    height: 175px; 
+    width: 100%;
+    display: block;
+    transition: height 0.5s ease; 
+}
+.burger__items ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0;
+}
+.burger__item {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.burger__item a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 2px;
+    transition: background-color 0.3s ease;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 13px;
+}
+.burger__item a:hover {
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    padding: 7px 15px;
+    cursor: pointer;;
+}
+.closeIcon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+    
+}
+.closeIcon::before, .closeIcon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+.closeIcon::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.closeIcon::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Стили для кнопки открытия бургер меню */
+.toggleMenuButton {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.toggleMenuButton span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+.toggleMenuButton span:nth-child(1) {
+    top: 0;
+}
+.toggleMenuButton span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.toggleMenuButton span:nth-child(3) {
+    bottom: 0;
+}
+.toggleMenuButton.open span:nth-child(1),
+.toggleMenuButton.open span:nth-child(3) {
+    transform: translateY(8px) rotate(45deg);
+}
+.toggleMenuButton.open span:nth-child(2) {
+    opacity: 0;
+}
+.toggleMenuButton.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}

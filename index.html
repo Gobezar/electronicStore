@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" id="currentTheme">
+    <link href="css/modal.css" rel="stylesheet">
+    <link href="css/burgerMenu.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg">
+    <title>Магазин электронных товаров</title>
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar__logo">
+                <a href="#"><img src="images/logo.png" class="navbar__logo__img" alt="Логотип"></a>
+            </div>
+
+            <div class="navbar__items">
+                <ul>
+                    <li class="navbar__item"><a href="#phones">Телефоны</a></li>
+                    <li class="navbar__item"><a href="#notebooks">Ноутбуки</a></li>
+                    <li class="navbar__item"><a href="#tablets">Планшеты</a></li>
+                    <li class="navbar__item"><a href="#gaming_pc">Игровые ПК</a></li>
+                    <li class="navbar__item"><a href="#accessories">Аксессуары и комплектующие</a></li>
+                </ul>
+            </div>
+            <div class="burgerMenuWrapper">
+                <div class="toggleMenuButton" id="toggleMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="burger__items" id="burgerItems">
+                    <div class="closeIcon" id="closeIcon"></div>
+                    <ul>
+                        <li class="burger__item"><a href="#phones">Телефоны</a></li>
+                        <li class="burger__item"><a href="#notebooks">Ноутбуки</a></li>
+                        <li class="burger__item"><a href="#tablets">Планшеты</a></li>
+                        <li class="burger__item"><a href="#gaming_pc">Игровые ПК</a></li>
+                        <li class="burger__item"><a href="#accessories">Аксессуары и комплектующие</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="switchThemeWrapper">
+                <button id="switchMode">Тёмная тема</button>
+            </div>
+        </nav>
+    </header>
+    <h2>Телефоны</h2>
+    <section class="phones__section" id="phones">
+    </section>
+    <h2>Ноутбуки</h2>
+    <section class="notebooks__section" id="notebooks">
+    </section>
+    <h2>Планшеты</h2>
+    <section class="tablets__section" id="tablets">
+    </section>
+    <h2>Игровые ПК</h2>
+    <section class="gaming_pc__section" id="gaming_pc">
+    </section>
+    <h2>Аксессуары и комплектующие</h2>
+    <section class="accessories__section" id="accessories">
+    </section>
+
+    <footer>
+        <ul class="footer__categoryLlist">
+            <li><a href="#phones">Телефоны</a></li>
+            <li><a href="#notebooks">Ноутбуки</a></li>
+            <li><a href="#tablets">Планшеты</a></li>
+            <li><a href="#gaming_pc">Игровые ПК</a></li>
+            <li><a href="#accessories">Аксессуары и комплектующие</a></li>
+        </ul>
+        <div class="footer__signature">
+            <div>
+                <p>© Все права защищены — 2023</p>
+            </div>
+            <div>
+                <p>Разработка, вёрстка, дизайн — <a href="https://github.com/Gobezar">Gobezar</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modalWindow hidden">
+        <form class="modal__form">
+            <div class="quantityWrapper"><label for="quantity">Количество:</label>
+                <input type="number" id="quantity" min="1" max="10" required>
+            </div>
+            <label>Цвет:</label>
+            <label><input type="radio" name="color" value="red" required> Красный</label>
+            <label><input type="radio" name="color" value="blue" required> Синий</label>
+            <label><input type="radio" name="color" value="green" required> Зеленый</label>
+
+            <div class="commentWrapper"><label for="comment">Комментарий:</label>
+                <textarea id="comment" maxlength="2000"></textarea>
+            </div>
+            <div class="modalWindowButtonsWrapper">
+                <button type="submit" onclick="buyProduct(event)">Купить</button>
+                <button type="button" onclick="hideModal()"> Закрыть </button>
+            </div>
+        </form>
+    </div>
+
+
+    <div id="buyModal" class="buyModalWindowWrapper buyModalWindowHidden">
+        <div class="buyModalWindow">
+            <p>Поздравляем с совершением покупки! Через несколько секунд Вы сможете продолжить.</p>
+        </div>
+        <div class="loader"></div>
+    </div>
+
+
+    <script type='module' src="js/cards/productCards.js"></script>
+    <script src="js/modalWindow.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pageTheme.js"></script>
+    <script src="js/scrollButton.js"></script>
+    <script src="js/burgerMenu.js"></script>
+
+
+
+
+
+</body>
+
+</html>
